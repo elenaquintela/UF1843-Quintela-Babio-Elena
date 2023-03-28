@@ -10,13 +10,59 @@
   <body>
     <h1 class="title">Formulario de contacto</h1>
     <form id="myForm">
-      <fieldset> 
+      <fieldset class="fs-1"> 
         <legend>Hablemos...</legend>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input required type="text" name="nombre" placeholder="Su nombre">
+          <span>Campo obligatorio</span>
+        </div>
+        
+        <div class="field">
+          <label for="direccion">Direccion</label>
+          <input type="text" name="direccion" placeholder="Su dirección">
+        </div>
+        
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input required type="email" name="email" placeholder="Su Email">
+          <span>Campo obligatorio</span>
+        </div>
+        
+        <div class="field">
+          <label for="asunto">Asunto</label>
+          <input required type="text" name="asunto" placeholder="Motivo de contacto">
+          <span>Campo obligatorio</span>
+        </div>
+        
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea required name="mensaje" placeholder="Su mensaje"></textarea>
+          <span>Campo obligatorio</span>
+        </div>
 
       </fieldset>
-      <fieldset>
+      <fieldset class="fs-2">
         <legend>Otros datos</legend>
-
+        <div class="field">
+          <label for="contacto"><strong>¿Cómo contacto por nosotros?</strong></label>
+          <input type="checkbox" name="contacto1"> Web
+          <input type="checkbox" name="contacto2"> Amigos
+          <input type="checkbox" name="contacto3"> Prensa
+          <input type="checkbox" name="contacto4"> Otros
+        </div>
+        <div class="field">
+          <label for="nacionalidad"><strong>¿Es usted español?</strong></label>
+            <input type="radio" name="nacionalidad" value="si"> Sí
+            <input type="radio" name="nacionalidad" value="no"> No
+        </div>
+        <label for="intereses"><strong>Sus intereses</strong></label>
+        <select name="intereses" multiple>
+          <option value="deportes">Deportes</option>
+          <option value="naturaleza">Naturaleza</option>
+          <option value="informatica">Informática</option>
+          <option value="cine">Cine</option>
+        </select>
       </fieldset>
       <button type="submit">Enviar</button>
     </form>
