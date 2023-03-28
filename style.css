@@ -14,7 +14,6 @@ body {
   justify-content: center;
 }
 
-
 #myForm {
   width: 400px;
 }
@@ -38,7 +37,6 @@ span {
   display:block;
   color: red;
 }
-
 
 label, textarea, .fs-1 input {
   display: block;
